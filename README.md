@@ -3,11 +3,24 @@
 </p>
 
 # Monitoramento de Ips/Portas
-Sistema de Monitoramento de IPs/Portas com envio de email caso o IP/Porta do Serviço pare de funcionar
+Sistema de Monitoramento de IPs/Portas com envio de email caso o IP/Porta do 
+Serviço pare de funcionar
 
 ## Objetivo
 ```bash
-Com este exemplo vc pode usar o dominio da AWS e passar os seus parâmetros de credencias
+Imagine que deseja monitorar os IPs de sua Rede, com as portas específicas,
+monitorar os serviços mais críticos que demandam seu ITIL da Empresa, 
+e geram indicadores de KPI para seu Analytics.
+
+Através de sua configuração de SMTP vc passa as credenciais de acesso para 
+envio do E-Mail de alerta.
+Inclue o email do remetente e destinatário para recebimento do alerta.
+Insere os IPs e portas a serem monitorados.
+e Sobe ou na sua rede local ou na nuvem para monitorar IPs fixos.
+
+Depois pode melhorar o FrontEnd!
+
+T+
 
 ```
 
