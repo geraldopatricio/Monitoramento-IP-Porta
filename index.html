@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Monitor de IP</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Monitor de IP</h1>
+    <div id="ipStatus"></div>
+
+    <script>
+        $(document).ready(function() {
+            setInterval(function() {
+                $.ajax({
+                    url: 'status.php',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(response) {
+                        updateStatus(response);
+                    }
+                });
+            }, 300);
+        });
+
+        function updateStatus(status) {
+            var ipStatus = $('#ipStatus');
+            ipStatus.empty();
+
+            for (var i = 0; i < status.length; i++) {
+                var ip = status[i].ip;
+                var online = status[i].online;
+
+                var div = $('<div></div>');
+                div.text(ip);
+
+                if (online) {
+                    div.css('color', 'green');
+                } else {
+                    div.css('color', 'red');
+                }
+
+                ipStatus.append(div);
+            }
+        }
+    </script>
+</body>
+</html>
