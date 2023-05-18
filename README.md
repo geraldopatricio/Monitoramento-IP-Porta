@@ -19,14 +19,20 @@ ips que deseja monitorar
 ```
 
 ## Telas
+
+### Ips OKAY
 <p align="center">
-  <img src="./assets/images/tela1.jpg" width="800" alt="tela1" />
+  <img src="./assets/images/tela1.jpg" width="800" alt="Ips OKAY" />
 </p>
+
+### 1 IP Off
 <p align="center">
-  <img src="./assets/images/tela2.jpg" width="800" alt="tela2" />
+  <img src="./assets/images/tela2.jpg" width="800" alt="1 IP Off" />
 </p>
+
+### Alerta sendo Enviado para o Email do gestor
 <p align="center">
-  <img src="./assets/images/tela3.jpg" width="800" alt="tela3" />
+  <img src="./assets/images/tela3.jpg" width="800" alt="Alerta sendo Enviado para o Email do gestor" />
 </p>
 
 ## suporte
