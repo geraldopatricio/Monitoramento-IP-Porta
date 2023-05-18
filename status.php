@@ -11,25 +11,19 @@ function sendEmail($subject, $body)
 
     try {
         $mail->isSMTP();
-        $mail->Host = 'email-smtp.us-east-1.amazonaws.com';
+        $mail->Host = 'SMTP.XXXXXX.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'AKIAUCCMZWTQ2CTX7HDP';
-        $mail->Password = 'BBzA1meb2xxKimHXD3NylCTQUM/CyvNuWAjgf0EIQyCm';
+        $mail->Username = 'USUARIO_XXXXXX';
+        $mail->Password = 'SENHA_XXXXXX';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        // remetente - email smartmotopecas
-        $mail->setFrom('naoresponda@smartmotopecas.com.br', 'naoresponda');
-
-        // remetente - email brothermotos - para quando quiser mudar de dominio encaminhador
-        // $mail->setFrom('naoresponda@brothermotos.com.br', 'naoresponda');
-
-        // remetente - email jlmotopecas - para quando quiser mudar de dominio encaminhador
-        // $mail->setFrom('naoresponda@jlmotopecas.com.br', 'naoresponda');
+        // remetente - email 
+        $mail->setFrom('naoresponda@DOMINIO-XXX.com.br', 'naoresponda');
 
         // email de quem irá receber o alerta, podendo ser uma lista de um grupo de email 
         // ou apenas um email do gestor no caso
-        $mail->addAddress('gpatricio.melo@gmail.com');
+        $mail->addAddress('EMAIL-DESTINO-XXX@gmail.com');
 
         $mail->Subject = $subject;
         $mail->Body = $body;
@@ -46,10 +40,10 @@ function checkIPStatus($ip, $port)
     return ($online) ? true : false;
 }
 
-$ip1 = '192.168.0.158';
-$port1 = 90;
-$ip2 = '192.168.0.25';
-$port2 = 80;
+$ip1 = '192.168.0.XXX';
+$port1 = PORTA_AQUI_XXX;
+$ip2 = '192.168.0.XXX';
+$port2 = PORTA_AQUI_XXX;
 
 $status = [];
 
