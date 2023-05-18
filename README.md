@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/images/logo.pjg" width="300" alt="PHP/Ajax" />
+  <img src="./assets/images/logo.jpg" width="300" alt="PHP/Ajax" />
 </p>
 
 # Monitoramento de Ips/Portas
@@ -13,19 +13,20 @@ Com este exemplo vc pode usar o dominio da AWS e passar os seus parâmetros de c
 
 ## Requisitos
 ```bash
-baixe a bilioteca phpmailer/phpmailer e altere as credenciais de email assim como os ips que deseja monitorar
+baixe a bilioteca phpmailer/phpmailer e altere as credenciais de email assim como os 
+ips que deseja monitorar
 
 ```
 
 ## Telas
 <p align="center">
-  <img src="./assets/images/tela1.png" width="800" alt="tela1" />
+  <img src="./assets/images/tela1.jpg" width="800" alt="tela1" />
 </p>
 <p align="center">
-  <img src="./assets/images/tela2.png" width="800" alt="tela2" />
+  <img src="./assets/images/tela2.jpg" width="800" alt="tela2" />
 </p>
 <p align="center">
-  <img src="./assets/images/tela3.png" width="800" alt="tela3" />
+  <img src="./assets/images/tela3.jpg" width="800" alt="tela3" />
 </p>
 
 ## suporte
